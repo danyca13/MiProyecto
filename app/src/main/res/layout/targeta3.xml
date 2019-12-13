@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="400dp"
+              android:layout_margin="8dp">
+    app:cardCornerRadius="50dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivPersona"
+            android:layout_width="198dp"
+            android:layout_height="234dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="5dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/tvNombre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/backgrounds/scenic[1]" />
+        <TextView
+                android:text="Encabezado"
+                android:layout_width="134dp"
+                android:layout_height="37dp"
+                android:id="@+id/tvNombre" android:layout_marginEnd="218dp"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintTop_toBottomOf="@+id/ivPersona"
+                app:layout_constraintBottom_toTopOf="@+id/tvGenero" android:textSize="36sp"
+                app:layout_constraintHorizontal_bias="1.0" android:layout_marginTop="16dp"/>
+        <TextView
+                android:text="texto de prueba texto de prueba texto de prueba texto de prueba texto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de pruebatexto de prueba"
+                android:layout_width="357dp"
+                android:layout_height="56dp"
+                android:id="@+id/tvGenero"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintHorizontal_bias="0.0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
